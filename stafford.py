@@ -23,9 +23,9 @@ from webhooks import webhookMessage
 from tweepyThread import tweepyThread
 
 # Change Working Directory
-abspath = os.path.abspath(__file__) # absolute path of file
-dname = os.path.dirname(abspath) # directory name
-os.chdir(dname) # change directory
+# abspath = os.path.abspath(__file__) # absolute path of file
+# dname = os.path.dirname(abspath) # directory name
+# os.chdir(dname) # change directory
 
 # Load Environment Variables - from env.env file
 # envpath = dname + "/.env" # Set directory of env.env file
