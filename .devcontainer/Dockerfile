@@ -15,7 +15,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 ADD . /
 
 # ENTRYPOINT ["python", "/python/stafford.py"]
-CMD [ "python", "./stafford.py" ]
+# RUN ['print', 'hello']
+# CMD ["/bin/echo", "hello world"]
+# CMD ["python", "/stafford.py" ]
 
 # RUN apt-get update && \
 #     apt-get install -y --no-install-recommends curl python-pip && \
