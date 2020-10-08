@@ -14,6 +14,8 @@ import os
 import dotenv
 
 print('testing success')
+time.sleep(300)
+print('test 2 success')
 
 # # # Changing path to parent path
 # # currentdir = os.path.dirname(os.path.realpath(__file__))
