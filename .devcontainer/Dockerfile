@@ -12,9 +12,10 @@ WORKDIR /python/app
 COPY /.devcontainer/requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-ADD . /python
+ADD . /
 
 # ENTRYPOINT ["python", "/python/stafford.py"]
+CMD [ "python", "./stafford.py" ]
 
 # RUN apt-get update && \
 #     apt-get install -y --no-install-recommends curl python-pip && \
@@ -25,7 +26,7 @@ ADD . /python
 
 # COPY . .
 
-# CMD [ "python", "./your-daemon-or-script.py" ]
+
 
 # Install needed packages and setup non-root user. Use a separate RUN statement to add your own dependencies.
 # COPY .devcontainer/library-scripts/*.sh /tmp/library-scripts/
