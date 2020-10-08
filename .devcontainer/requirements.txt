@@ -1,0 +1,6 @@
+# Python Dependencies
+requests
+bs4
+pandas
+tweepy
+python-dotenv
