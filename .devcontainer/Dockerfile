@@ -12,7 +12,7 @@ WORKDIR /python/app
 COPY /.devcontainer/requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-ADD . /
+ADD /. ./
 
 # ENTRYPOINT ["python", "/python/stafford.py"]
 # RUN ['print', 'hello']
