@@ -28,9 +28,9 @@ dname = os.path.dirname(abspath) # directory name
 os.chdir(dname) # change directory
 
 # Load Environment Variables - from env.env file
-envpath = dname + "/.env" # Set directory of env.env file
-from dotenv import load_dotenv
-load_dotenv(dotenv_path = envpath)
+# envpath = dname + "/.env" # Set directory of env.env file
+# from dotenv import load_dotenv
+# load_dotenv(dotenv_path = envpath)
 
 # Environment Variables - change in '.env' file
 ckey = os.getenv("API_KEY_TC")
