@@ -44,7 +44,7 @@ def get_secret(secret_name):
 # # from dotenv import load_dotenv
 # # load_dotenv(dotenv_path = envpath)
 
-Environment Variables - change in '.env' file
+# Environment Variables - change in '.env' file
 ckey = get_secret("API_KEY_TC")
 csecret = get_secret("API_SECRET_TC")
 atoken = get_secret("API_ACCESS_TOKEN_TC")
