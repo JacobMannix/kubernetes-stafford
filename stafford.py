@@ -44,14 +44,14 @@ def get_secret(secret_name):
 # # from dotenv import load_dotenv
 # # load_dotenv(dotenv_path = envpath)
 
-# Environment Variables - change in '.env' file
-# ckey = get_secret("API_KEY_TC")
-# csecret = get_secret("API_SECRET_TC")
-# atoken = get_secret("API_ACCESS_TOKEN_TC")
-# asecret = get_secret("API_ACCESS_SECRET_TC")
-# twitterUser = get_secret("TWITTER_ACCOUNT_TC")
-# webhook_url = get_secret("WEBHOOK_DISCORD_S1")
-# archiveURL = get_secret("WEBSITE_STAFFORD_SK")
+Environment Variables - change in '.env' file
+ckey = get_secret("API_KEY_TC")
+csecret = get_secret("API_SECRET_TC")
+atoken = get_secret("API_ACCESS_TOKEN_TC")
+asecret = get_secret("API_ACCESS_SECRET_TC")
+twitterUser = get_secret("TWITTER_ACCOUNT_TC")
+webhook_url = get_secret("WEBHOOK_DISCORD_S1")
+archiveURL = get_secret("WEBSITE_STAFFORD_SK")
 
 print(ckey)
 print(csecret)
