@@ -1,0 +1,40 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: stafford-cj
+spec:
+  schedule: "*/5 0,1,18-23, * * 0,5,6"
+  # schedule: "* * * * *"
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            app: stafford
+        spec:
+          restartPolicy: OnFailure
+          containers:
+          - name: main
+            image: jmannix3/stafford_testing:1.0
+            imagePullPolicy: Always
+            args:
+            - python
+            - stafford.py
+            envFrom:
+              - secretRef:
+                  name: stafford-secret
+            volumeMounts:
+            - name: secrets
+              mountPath: "/app/secrets"
+              readOnly: true
+            - name: data
+              mountPath: "/app/data"
+          volumes:
+          - name: secrets
+            secret:
+              secretName: stafford-secret
+          - name: data
+            persistentVolumeClaim:
+                  claimName: stafford-pvc

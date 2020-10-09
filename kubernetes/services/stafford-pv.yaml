@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: stafford-pv
+spec:
+  # storageClassName: hostpath
+  persistentVolumeReclaimPolicy: Retain
+  capacity: 
+    storage: 1Mi
+  accessModes:
+    - ReadWriteMany
+  hostPath:
+    path: "/mnt/data"

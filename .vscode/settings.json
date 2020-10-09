@@ -1,5 +1,6 @@
 {
-    "python.pythonPath": "/usr/local/bin/python",
+    "python.pythonPath": "/usr/bin/python3",
     "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "python.linting.pylintPath": "/usr/local/bin/python3"
 }

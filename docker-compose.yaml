@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  stafford-app:
+    build:
+      context: .
+    container_name: stafford-app
+    image: jmannix3/stafford_testing:1.0
