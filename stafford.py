@@ -14,7 +14,7 @@ import os
 import dotenv
 
 def get_secret(secret_name):
-    with open(secret_name, 'r') as secret_file:
+    with open("/app/secrets" + secret_name, 'r') as secret_file:
         return secret_file.read()
 
 # test = get_secret('WEBHOOK_DISCORD_S1')
