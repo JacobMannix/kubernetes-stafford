@@ -13,6 +13,7 @@ import sys
 import os
 import dotenv
 
+<<<<<<< Updated upstream
 # # Changing path to parent path
 # currentdir = os.path.dirname(os.path.realpath(__file__))
 # parentdir = os.path.dirname(currentdir) # getting parent directory for envpath
@@ -66,6 +67,75 @@ def staffordResults(archiveURL):
         A.append(cells[0].find(text=True))
         B.append(cells[1].find(text=True))
         C.append(cells[2].find(text=True))
+=======
+print('testing success')
+time.sleep(300)
+
+with open('/secrets/WEBHOOK_DISCORD_S1.txt', 'r') as secret_file:
+    database_password = secret_file.read()
+
+# webhook = get_secret('WEBHOOK_DISCORD_S1.txt')
+print(database_password)
+
+
+# print('test 2 success')
+
+
+
+# # # Changing path to parent path
+# # currentdir = os.path.dirname(os.path.realpath(__file__))
+# # parentdir = os.path.dirname(currentdir) # getting parent directory for envpath
+# # sys.path.append(parentdir) # changing path for local modules
+
+# # Local Modules from parent directory
+# from webhooks import webhookMessage
+# from tweepyThread import tweepyThread
+
+# # Change Working Directory
+# # abspath = os.path.abspath(__file__) # absolute path of file
+# # dname = os.path.dirname(abspath) # directory name
+# # os.chdir(dname) # change directory
+
+# # Load Environment Variables - from env.env file
+# # envpath = dname + "/.env" # Set directory of env.env file
+# # from dotenv import load_dotenv
+# # load_dotenv(dotenv_path = envpath)
+
+# # Environment Variables - change in '.env' file
+# ckey = os.getenv("API_KEY_TC")
+# csecret = os.getenv("API_SECRET_TC")
+# atoken = os.getenv("API_ACCESS_TOKEN_TC")
+# asecret = os.getenv("API_ACCESS_SECRET_TC")
+# twitterUser = os.getenv("TWITTER_ACCOUNT_TC")
+# webhook_url = os.getenv("WEBHOOK_DISCORD_S1")
+# archiveURL = os.getenv("WEBSITE_STAFFORD_SK")
+
+# # Race Results function
+# def staffordResults(archiveURL):
+#     # Getting Page of all Race Results
+#     archivePage = requests.get(archiveURL)
+#     archiveSoup = bs4.BeautifulSoup(archivePage.text, "html.parser")
+#     resultsHTML = archiveSoup.find(itemprop="url")
+
+#     resultsURL = resultsHTML['href'] # Getting URL of most recent race result
+#     title = resultsHTML.string # Get title of article of most recent race
+
+#     # Use most recent race URL to see results of race
+#     resultsPage = requests.get(resultsURL)
+#     resultsSoup = bs4.BeautifulSoup(resultsPage.text, "html.parser")
+#     resultsData = resultsSoup.find(class_= "row-hover")
+
+#     # Appending Race Results to Lists
+#     A=[]
+#     B=[]
+#     C=[]
+#     for row in resultsData.findAll("tr"):
+#         cells = row.findAll('td')
+#         # drivers = row.findAll('th')
+#         A.append(cells[0].find(text=True))
+#         B.append(cells[1].find(text=True))
+#         C.append(cells[2].find(text=True))
+>>>>>>> Stashed changes
     
     # Append A,B,C Lists to new list with some formatting
     list_index = []
