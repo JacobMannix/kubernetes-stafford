@@ -13,15 +13,15 @@ import sys
 import os
 import dotenv
 
-with open('/secrets/WEBHOOK_DISCORD_S1.txt', 'r') as secret_file:
-    database_password = secret_file.read()
+# with open('/secrets/WEBHOOK_DISCORD_S1.txt', 'r') as secret_file:
+    # database_password = secret_file.read()
 
 # webhook = get_secret('WEBHOOK_DISCORD_S1.txt')
-print(database_password)
+# print(database_password)
 
-# print('testing success')
-# time.sleep(300)
-# print('test 2 success')
+print('testing success')
+time.sleep(400)
+print('test 2 success')
 
 
 
