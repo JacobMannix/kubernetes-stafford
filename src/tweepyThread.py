@@ -5,23 +5,8 @@
 # Import Dependencies
 import tweepy
 
-# -----
-# Only needed if defining api keys here
-# import os
-
-# # Changing path to parent path
-# currentdir = os.path.dirname(os.path.realpath(__file__))
-# parentdir = os.path.dirname(currentdir) # getting parent directory for envpath
-# sys.path.append(parentdir) # changing path for local modules
-
-# # Load Environment Variables - from env.env file
-# envpath = parentdir + "/env.env" # Set directory of env.env file
-# from dotenv import load_dotenv
-# load_dotenv(dotenv_path = envpath)
-# -----
-
 # Function
-def tweepyThread(user, list):
+def tweepyThread(user, list, ckey, csecret, atoken, asecret):
     # Define Authentication keys through environmental variables
     # ckey = os.getenv("API_KEY_TC")
     # csecret = os.getenv("API_SECRET_TC")

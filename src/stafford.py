@@ -11,7 +11,7 @@ import tweepy
 import time
 import sys
 import os
-import dotenv
+# import dotenv
 
 # Local Modules from parent directory
 from webhooks import webhookMessage
@@ -23,7 +23,7 @@ def get_secret(secret_name):
     with open("/app/secrets/" + secret_name, 'r') as secret_file:
         return secret_file.read()
 
-# Environment Variables - change in '.env' file
+# Variables from mounted secrets volume (handled by kubernetes)
 ckey = get_secret("API_KEY_TC")
 csecret = get_secret("API_SECRET_TC")
 atoken = get_secret("API_ACCESS_TOKEN_TC")
@@ -97,7 +97,7 @@ def staffordResults(archiveURL):
         print(list_dfString)
 
         # Send race results in tweet thread
-        tweepyThread(twitterUser, list_dfString) # creates a tweet, takes a list
+        # tweepyThread(twitterUser, list_dfString, ckey, csecret, atoken, asecret) # creates a tweet, takes a list
 
         # Send race results to discord -- Optional if you want to send results through webhook
         message_content = title + "\n" + dfDiscord

@@ -4,8 +4,6 @@
 
 # Import Dependencies
 import os
-# from datetime import date
-# from datetime import timedelta
 
 # Function
 def staffordFile(file_path):
