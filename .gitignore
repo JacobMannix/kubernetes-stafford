@@ -2,3 +2,4 @@
 *.env
 *.pyc
 *.env
+kubernetes/secrets/stafford-secret.yaml

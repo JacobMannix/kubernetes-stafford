@@ -4,4 +4,4 @@ services:
     build:
       context: .
     container_name: stafford-app
-    image: jmannix3/stafford_testing:1.0
+    image: jmannix3/stafford-app
