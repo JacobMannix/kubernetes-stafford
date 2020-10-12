@@ -18,19 +18,24 @@ from webhooks import webhookMessage
 from tweepyThread import tweepyThread
 from staffordFile import staffordFile
 
-# function to find mounted secrets files
+#-----
+# FILEPATH OF APP (specified in dockerfile)
+src_path = "/app"
+#-----
+
+# Function to find mounted secrets files
 def get_secret(secret_name):
-    with open("/app/secrets/" + secret_name, 'r') as secret_file:
+    with open(src_path + "/secrets/" + secret_name, 'r') as secret_file:
         return secret_file.read()
 
 # Variables from mounted secrets volume (handled by kubernetes)
-ckey = get_secret("API_KEY_TC")
-csecret = get_secret("API_SECRET_TC")
-atoken = get_secret("API_ACCESS_TOKEN_TC")
-asecret = get_secret("API_ACCESS_SECRET_TC")
-twitterUser = get_secret("TWITTER_ACCOUNT_TC")
-webhook_url = get_secret("WEBHOOK_DISCORD_S1")
-archiveURL = get_secret("WEBSITE_STAFFORD_SK")
+ckey = get_secret("API_KEY")
+csecret = get_secret("API_SECRET")
+atoken = get_secret("API_ACCESS_TOKEN")
+asecret = get_secret("API_ACCESS_SECRET")
+twitterUser = get_secret("TWITTER_ACCOUNT")
+webhook_url = get_secret("WEBHOOK_DISCORD")
+archiveURL = get_secret("ARCHIVE_WEBSITE")
 
 # Race Results function
 def staffordResults(archiveURL):
@@ -89,15 +94,15 @@ def staffordResults(archiveURL):
         list_dfString.append(title + "\n" + dfString + "\n" + " "  + "\n" + resultsHTML['href'])
     
     # Filepath of persistent data
-    post_filepath = '/app/data/postTitle.txt'
+    post_filepath = src_path + '/data/postTitle.txt'
     postTitle = staffordFile(post_filepath)
 
     # Checks if raceDate
     if title != postTitle:
         print(list_dfString)
 
-        # Send race results in tweet thread
-        # tweepyThread(twitterUser, list_dfString, ckey, csecret, atoken, asecret) # creates a tweet, takes a list
+        # Send race results in tweet
+        tweepyThread(twitterUser, list_dfString, ckey, csecret, atoken, asecret) # creates a tweet, takes a list
 
         # Send race results to discord -- Optional if you want to send results through webhook
         message_content = title + "\n" + dfDiscord

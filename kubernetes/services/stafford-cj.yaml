@@ -3,7 +3,7 @@ kind: CronJob
 metadata:
   name: stafford-cj
 spec:
-  schedule: "*/5 0,1,18-23, * * 0,5,6"
+  schedule: "*/5 0,1,18-23 * 5-10 0,5,6"
   # schedule: "* * * * *"
   successfulJobsHistoryLimit: 1
   failedJobsHistoryLimit: 1
@@ -14,10 +14,10 @@ spec:
           labels:
             app: stafford
         spec:
-          restartPolicy: OnFailure
+          restartPolicy: Never
           containers:
           - name: main
-            image: jmannix3/stafford_testing:1.0
+            image: jmannix3/stafford-app
             imagePullPolicy: Always
             args:
             - python
