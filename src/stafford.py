@@ -102,7 +102,7 @@ def staffordResults(archiveURL):
         print(list_dfString)
 
         # Send race results in tweet
-        tweepyThread(twitterUser, list_dfString, ckey, csecret, atoken, asecret) # creates a tweet, takes a list
+        # tweepyThread(twitterUser, list_dfString, ckey, csecret, atoken, asecret) # creates a tweet, takes a list
 
         # Send race results to discord -- Optional if you want to send results through webhook
         message_content = title + "\n" + dfDiscord
