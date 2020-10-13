@@ -3,3 +3,5 @@
 *.pyc
 *.env
 kubernetes/secrets/stafford-secret.yaml
+.vscode/
+.vscode/settings.json
