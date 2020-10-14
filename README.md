@@ -5,7 +5,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/jacobmannix/kubernetes-stafford)
 
 #
-> This is a based off the project [stafford-racing-twitter-bot](https://github.com/JacobMannix/stafford-racing-twitter-bot) built into a docker container and orchestrated by kubernetes. Kubernetes files include a cronjob for scheudled the script, a secret for securely storing api keys and a persistent volume and associated claim for storing the updated title used by the script.
+This is a based off the project [stafford-racing-twitter-bot](https://github.com/JacobMannix/stafford-racing-twitter-bot) built into a docker container and orchestrated by kubernetes. Kubernetes files include a cronjob for scheudled the script, a secret for securely storing api keys and a persistent volume and associated claim for storing the updated title used by the script.
 
 #
 ### Docker Image
