@@ -8,6 +8,12 @@
 #
 ### Docker Image
 The docker image can be found at [dockerhub/stafford-app](https://hub.docker.com/repository/docker/jmannix3/stafford-app). All the specifics of the contents of the image and python app can be found at the [stafford-racing-twitter-bot](https://github.com/JacobMannix/stafford-racing-twitter-bot) repo.
+- [Dockerfile](Dockerfile) - defines how the image is built
+- [docker-compose.yaml](docker-compose.yaml) - used to build the image from the dockerfile (change dockerhub repo name)
+
+```shell
+docker-compose build jmannix3/stafford-app
+```
 
 #
 ### Kubernetes
@@ -16,6 +22,10 @@ The necessary files to run this project with kubernetes are contained within the
 - [stafford-pv.yaml](/kubernetes/services) - create a necessary persistent volume
 - [stafford-pvc.yaml](/kubernetes/services) - create the necessary persistent volume claim needed to store the file in the [data](/src/data) folder.
 - [stafford-cj.yaml](/kubernetes/services) - contains the necessary information to access the secrets volume and persistant volume needed by the app
+
+```shell
+kubectl create -f file-name.yaml
+```
 
 #
 Licensed under the [MIT License](LICENSE).
