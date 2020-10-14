@@ -1,4 +1,4 @@
-# kubernetes stafford
+# Kubernetes Stafford
 ![GitHub](https://img.shields.io/github/license/jacobmannix/kubernetes-stafford?color=blue)
 ![GitHub top language](https://img.shields.io/github/languages/top/jacobmannix/kubernetes-stafford)
 ![GitHub last commit](https://img.shields.io/github/last-commit/jacobmannix/kubernetes-stafford)
