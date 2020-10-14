@@ -5,18 +5,11 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/jacobmannix/kubernetes-stafford)
 
 #
-> This is a python script built into a docker container and orchestrated by kubernetes. Kubernetes files include a cronjob for scheudled the script, a secret for securely storing api keys and a persistent volume and associated claim for storing the updated title used by the script.
-
-includes a few libraries, to add or remove libraries see [requirements.txt](.devcontainer/requirements.txt)
-- [Github](https://github.com/JacobMannix/docker_python)
-- [Docker Hub Image](https://hub.docker.com/repository/docker/jmannix3/docker_python)
+> This is a based off the project [stafford-racing-twitter-bot](https://github.com/JacobMannix/stafford-racing-twitter-bot) built into a docker container and orchestrated by kubernetes. Kubernetes files include a cronjob for scheudled the script, a secret for securely storing api keys and a persistent volume and associated claim for storing the updated title used by the script.
 
 #
-### Apps used
-- [Docker](https://www.docker.com/) - Dockerfile, docker-compose.yaml
-- [Visual Studio Code](https://code.visualstudio.com/) - .vscode
-- Python - .py
-- Kubernetes - yaml(s) in kubernetes folder
+### Docker Image
+The docker image can be found at [dockerhub/stafford-app](https://hub.docker.com/repository/docker/jmannix3/stafford-app). All the specifics of the contents of the image and python app can be found at the [stafford-racing-twitter-bot](https://github.com/JacobMannix/stafford-racing-twitter-bot) repo.
 
 #
 Licensed under the [MIT License](LICENSE).
