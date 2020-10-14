@@ -26,6 +26,3 @@ The necessary files to run this project with kubernetes are contained within the
 ```shell
 kubectl create -f file-name.yaml
 ```
-
-#
-Licensed under the [MIT License](LICENSE).
