@@ -1,4 +1,4 @@
-# Stafford-app docker container and kuberentes files
+# kubernetes stafford
 
 ![GitHub](https://img.shields.io/github/license/jacobmannix/kubernetes-stafford?color=blue)
 
