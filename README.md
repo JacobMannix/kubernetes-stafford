@@ -1,7 +1,7 @@
 # Kubernetes Stafford
 [![GitHub](https://img.shields.io/github/license/jacobmannix/kubernetes-stafford?color=blue)](LICENSE)
 ![GitHub top language](https://img.shields.io/github/languages/top/jacobmannix/kubernetes-stafford)
-[![GitHub last commit](https://img.shields.io/github/last-commit/jacobmannix/kubernetes-stafford)](/commits)
+[![GitHub last commit](https://img.shields.io/github/last-commit/jacobmannix/kubernetes-stafford)](/commits/master)
 
 > <b> This project is a based off my project [stafford-racing-twitter-bot](https://github.com/JacobMannix/stafford-racing-twitter-bot) built into a docker container and orchestrated by kubernetes. Kubernetes files include a cronjob for scheduling the script, a secret for securely storing api keys and a persistent volume and associated claim for storing the updated title used by the script. </b>
 
