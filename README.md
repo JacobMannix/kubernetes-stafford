@@ -2,6 +2,8 @@
 
 ![GitHub](https://img.shields.io/github/license/jacobmannix/kubernetes-stafford?color=blue)
 ![GitHub top language](https://img.shields.io/github/languages/top/jacobmannix/kubernetes-stafford)
+![GitHub last commit](https://img.shields.io/github/last-commit/jacobmannix/kubernetes-stafford)
+![GitHub Release Date](https://img.shields.io/github/release-date/jacobmannix/kubernetes-stafford)
 
 #
 > This is a python script built into a docker container and orchestrated by kubernetes. Kubernetes files include a cronjob for scheudled the script, a secret for securely storing api keys and a persistent volume and associated claim for storing the updated title used by the script.
