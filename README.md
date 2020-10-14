@@ -9,7 +9,7 @@ includes a few libraries, to add or remove libraries see [requirements.txt](.dev
 - [Docker Hub Image](https://hub.docker.com/repository/docker/jmannix3/docker_python)
 
 ---
-
+#
 ### Apps used
 - [Docker](https://www.docker.com/) - Dockerfile, docker-compose.yaml
 - [Visual Studio Code](https://code.visualstudio.com/) - .vscode
@@ -17,5 +17,5 @@ includes a few libraries, to add or remove libraries see [requirements.txt](.dev
 - Kubernetes - yaml(s) in kubernetes folder
 
 ---
-
+#
 Licensed under the [MIT License](LICENSE).
